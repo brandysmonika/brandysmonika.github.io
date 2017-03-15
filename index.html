@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Formularz</title>
 </head>
+
 <body>
-  <form action="https://formspree.io/brandys.monika@gmail.com" method="POST">
-<!-- Podstawowe pole tekstowe -->
+    <form action="https://formspree.io/brandys.monika@gmail.com" method="POST">
+        <!-- Podstawowe pole tekstowe -->
 
-<label for="name">Imię:</label>
-<input type="text" id="name" name="Imię" /><br /><br />
-
-
-<label for="surname">Nazwisko:</label>
-<input type="text" id="surname" name="Nazwisko" /><br /><br />
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="Imię" />
+        <br />
+        <br />
 
 
-<label for="email">Email:</label>
-<input type="text" id="email" name="Email" /><br /><br />
+        <label for="surname">Nazwisko:</label>
+        <input type="text" id="surname" name="Nazwisko" />
+        <br />
+        <br />
 
 
-<label for="phone">Telefon:</label>
-<input type="text" id="phone" name="Telefon" /><br /><br />
-
-<p>Miasto:</p>
-<label for="city"></label>
-<select id="city">
-	<option selected="selected">Kraków</option>
-	<option>Katowice</option>
-	<option>Warszawa</option>
-</select> <br /><br />
-
-<p>Płeć:</p>
-<label for="female"></label>
-<input type="radio" name="Płeć" id= "female" value="kobieta" />Kobieta
-<label for="male"></label>
-<input type="radio" name="Płeć" id="male" value="mezczyzna" />Mężczyzna
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="Email" />
+        <br />
+        <br />
 
 
-<!-- Pole typu CHECKBOX -->
-<p>Czy wyrażasz zgodę na przetwarzanie danych?</p>
-<label for="checkbox">Tak </label>
-<input type="checkbox" name="Zgoda" id= "checkbox" value="Tak" /><br /><br />
+        <label for="phone">Telefon:</label>
+        <input type="text" id="phone" name="Telefon" />
+        <br />
+        <br />
 
-<p>Wiadomość:</p>
-<label for="message"></label>
-<textarea name="Wiadomość" id="message" cols="50" rows="10"></textarea>
-<br /><br /><br />
-<!-- Przycisk WYŚLIJ -->
-<input type="submit" value="Wyślij" />
+        <p>Miasto:</p>
+        <label for="city"></label>
+        <select id="city">
+            <option selected="selected">Kraków</option>
+            <option>Katowice</option>
+            <option>Warszawa</option>
+        </select>
+        <br />
+        <br />
 
-</form>  
+        <p>Płeć:</p>
+        <label for="female"></label>
+        <input type="radio" name="Płeć" id="female" value="kobieta" />Kobieta
+        <label for="male"></label>
+        <input type="radio" name="Płeć" id="male" value="mezczyzna" />Mężczyzna
+
+
+        <!-- Pole typu CHECKBOX -->
+        <p>Czy wyrażasz zgodę na przetwarzanie danych?</p>
+        <label for="checkbox">Tak </label>
+        <input type="checkbox" name="Zgoda" id="checkbox" value="Tak" />
+        <br />
+        <br />
+
+        <p>Wiadomość:</p>
+        <label for="message"></label>
+        <textarea name="Wiadomość" id="message" cols="50" rows="10"></textarea>
+        <br />
+        <br />
+        <br />
+        <!-- Przycisk WYŚLIJ -->
+        <input type="submit" value="Wyślij" />
+
+    </form>
 </body>
+
 </html>
