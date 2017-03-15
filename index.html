@@ -19,26 +19,28 @@
 <label for="phone">Telefon: </label>
 <input type="text" id="phone" name="Telefon" /><br /><br />
 
-<label>Miasto: </label>
-<select name="name">
+<label for="city">Miasto: </label>
+<select id="city">
 	<option selected="selected">Kraków</option>
 	<option>Katowice</option>
 	<option>Warszawa</option>
 </select> <br /><br />
 
-<label for="name">Płeć: </label>
-<input type="radio" name="Płeć" value="Kobieta" />Kobieta
-<input type="radio" name="Płeć" value="Mężczyzna" />Mężczyzna
+<p>Płeć:</p>
+<label for="female"></label>
+<input type="radio" name="Płeć" id= "female" value="kobieta" />Kobieta
+<label for="male"></label>
+<input type="radio" name="Płeć" id="male" value="mezczyzna" />Mężczyzna
 
 
 <!-- Pole typu CHECKBOX -->
 <p>Czy wyrażasz zgodę na przetwarzanie danych?</p>
-<label for="name">Tak </label>
-<input type="checkbox" name="Zgoda" value="yes" /><br />
+<label for="checkbox">Tak </label>
+<input type="checkbox" name="Zgoda" id= "checkbox" value="yes" /><br /><br />
 
-
-<p>Wiadomość: </p>
-<textarea name="Wiadomość" cols="50" rows="10"></textarea>
+<p>Wiadomość:</p>
+<label for="message"></label>
+<textarea name="Wiadomość" id="message" cols="50" rows="10"></textarea>
 <br /><br /><br />
 <!-- Przycisk WYŚLIJ -->
 <input type="submit" value="Wyślij" />
