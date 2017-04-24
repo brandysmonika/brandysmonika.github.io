@@ -3,68 +3,338 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Formularz</title>
+    <title>Bootstrap</title>
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Montserrat|Roboto+Slab" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Główne style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Rensposywne Style -->
+    <link rel="stylesheet" href="css/rensposive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <form action="https://formspree.io/brandys.monika@gmail.com" method="POST">
-        <!-- Podstawowe pole tekstowe -->
 
-        <label for="name">Imię:</label>
-        <input type="text" id="name" name="Imię" />
-        <br />
-        <br />
+    <!-- Menu nawigacyjne START -->
+
+    <nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Marka i przełączniki zostały pogrupowane w celu lepszego wyświetlania na urządzeniach mobilnych -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-glowne" aria-expanded="false">
+                    <!-- Data target łaczy się z nizej podanym id, jezeli podamy dwie rozne nazwy rwd menu nie bedzie działac-->
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">Bootstrap Project</div>
+            </div>
+
+            <!-- Zbiera linki nawigacyjne, formularze i inne treści do przełączania -->
+            <div class="collapse navbar-collapse" id="menu-glowne">
+                <ul class="nav navbar-nav navbar-right text-right">
+                    <li class="menu-item"><a href="#services">Services</a></li>
+                    <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="menu-item"><a href="#about">About</a></li>
+                    <li class="menu-item"><a href="#about">Team</a></li>
+                    <li class="menu-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Menu nawigacyjne KONIEC -->
+
+    <!-- Header z obrazkiem START -->
+
+    <div id="main-header">
+        <div class="container">
+            <div class="header-caption">
+                <h2>Num liere conta, sum berte col</h2>
+                <h1>Lorem Ipsum Dolor</h1>
+                <a class="btn btn-info btn-lg btn-blue" href="#services"><span title="viev">Viev more</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header z obrazkiem STOP -->
+
+    <!-- Section Services START -->
+
+    <section id="services" class="text-center">
+        <div class="container">
+            <div class="row">
+                <h1>Services</h1>
+                <h2>Lorem ipsum dolor sit amet</h2>
+            </div>
+            <div class="row col">
+                <div class="col-sm-4 col-xs-12">
+                    <i class="fa fa-briefcase fa-3x icon-awe"></i>
+                    <h3>Web Developer</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, doloribus explicabo alias eius totam esse odit similique molestias ab, voluptas suscipit sint nostrum nihil illum ipsum ullam libero eaque maiores.</p>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <i class="fa fa-cloud-download fa-3x icon-awe"></i>
+                    <h3>E-commerce</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, doloribus explicabo alias eius totam esse odit similique molestias ab, voluptas suscipit sint nostrum nihil illum ipsum ullam libero eaque maiores.</p>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <i class="fa fa-comment-o fa-3x icon-awe"></i>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, doloribus explicabo alias eius totam esse odit similique molestias ab, voluptas suscipit sint nostrum nihil illum ipsum ullam libero eaque maiores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Services STOP -->
+
+    <!-- Section Portfolio START -->
+    <section id="portfolio" class="text-center">
+        <div class="container">
+            <div class="row">
+                <h1>Portfolio</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+            </div>
+            <!-- Obrazek 1, 2, 3 START -->
+            <div class="row">
+                <div class="col-lg-4 col-xs-12">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="img-container">
+                                <div id="portfolio-item-1" class="picture hov">
+                                    <div class="portfolio-mask">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-nag">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor dolor dolor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xs-12">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="img-container">
+                                <div id="portfolio-item-2" class="picture hov">
+                                    <div class="portfolio-mask">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-nag">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor dolor dolor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xs-12">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="img-container">
+                                <div id="portfolio-item-3" class="picture hov">
+                                    <div class="portfolio-mask">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-nag">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor dolor dolor</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Obrazek 1, 2, 3 STOP -->
+                <!-- Obrazek 4, 5, 5 START -->
+                <div class="col-lg-4 col-xs-12">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="img-container">
+                                <div id="portfolio-item-4" class="picture hov">
+                                    <div class="portfolio-mask">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-nag">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor dolor dolor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xs-12">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="img-container">
+                                <div id="portfolio-item-5" class="picture hov">
+                                    <div class="portfolio-mask">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-nag">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor dolor dolor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xs-12">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="img-container">
+                                <div id="portfolio-item-6" class="picture hov">
+                                    <div class="portfolio-mask">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-nag">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor dolor dolor</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Obrazek 4, 5, 5 STOP -->
+            </div>
+        </div>
+    </section>
+    <!-- Section Portfolio STOP -->
+
+    <!-- Sekcja o Nas START -->
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Meet our team</h1>
+                <h2 class="text-center">Lorem ipsum dolor dolor dolor</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-xs-12">
+                    <div class="face text-center">
+                        <img src="img/team/man-1.jpg" alt="..." class="img-circle">
+                    </div>
+                    <h3 class="text-center">Eric Stern</h3>
+                    <p class="text-center">Account Manager</p>
+                    <div class="icons text-center">
+                        <a href=""><i class="fa fa-facebook fa-2x icon-awe"></i></a>
+                        <a href=""><i class="fa fa-twitter fa-2x icon-awe"></i></a>
+                        <a href=""><i class="fa fa-linkedin fa-2x icon-awe"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                    <div class="face text-center">
+                        <img src="img/team/man-2.jpg" alt="..." class="img-circle">
+                    </div>
+                    <h3 class="text-center">Martin Muller</h3>
+                    <p class="text-center">Developer</p>
+                    <div class="icons text-center">
+                        <a href=""><i class="fa fa-facebook fa-2x icon-awe"></i></a>
+                        <a href=""><i class="fa fa-twitter fa-2x icon-awe"></i></a>
+                        <a href=""><i class="fa fa-linkedin fa-2x icon-awe"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                    <div class="face text-center">
+                        <img src="img/team/woman-1.jpg" alt="..." class="img-circle">
+                    </div>
+                    <h3 class="text-center">Anna Smith</h3>
+                    <p class="text-center">Project Manager</p>
+                    <div class="icons text-center">
+                        <a href=""><i class="fa fa-facebook fa-2x icon-awe"></i></a>
+                        <a href=""><i class="fa fa-twitter fa-2x icon-awe"></i></a>
+                        <a href=""><i class="fa fa-linkedin fa-2x icon-awe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja o Nas STOP -->
+
+    <!-- Sekcja kontakt START -->
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Contact Us</h1>
+                <h2 class="text-center">Lorem ipsum dolor dolor dolor</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <form>
+                        <input type="text" placeholder="Your name" class="place-input">
+                        <br />
+                        <br />
+                        <input type="text" placeholder="Your phone" class="place-input">
+                        <br />
+                        <br />
+                        <input type="email" placeholder="Your email" class="place-input">
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-xs-12">
+                    <form>
+                        <textarea placeholder="Your message" class="input-textarea"></textarea>     
+                    </form>           
+                    
+                </div>
+                <div class="row col-md-12 col-xs-12 text-center">
+                    <input type="submit" value="Send message" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja kontakt STOP -->
+
+    <!-- Sekcja footer START -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12 text-center">
+                    <h1>Copyright Your Website</h1>
+                </div>
+                <div class="col-sm-4 col-xs-12 text-center">
+                    <div class="icons text-center">
+                        <a href=""><i class="fa fa-facebook fa-2x icon-awe"></i></a>
+                        <a href=""><i class="fa fa-twitter fa-2x icon-awe"></i></a>
+                        <a href=""><i class="fa fa-linkedin fa-2x icon-awe"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 text-center">
+                    <h1>Privaty Policy<span>Terms of use<span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sekcja footer STOP -->
 
 
-        <label for="surname">Nazwisko:</label>
-        <input type="text" id="surname" name="Nazwisko" />
-        <br />
-        <br />
+    <!--Skrypty JS-->
+    <!-- jQuery plugins -->
+    <script src="js/jquery-3.2.0.min.js"></script>
 
-
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="Email" />
-        <br />
-        <br />
-
-
-        <label for="phone">Telefon:</label>
-        <input type="text" id="phone" name="Telefon" />
-        <br />
-        <br />
-
-        <label for="city">Miasto:</label>
-        <select id="city">
-            <option selected="selected">Kraków</option>
-            <option>Katowice</option>
-            <option>Warszawa</option>
-        </select>
-        <br />
-        <br />
-
-        <label for="female">Płeć:</label>
-        <input type="radio" name="Płeć" id="female" value="kobieta" />Kobieta
-        <label for="male"></label>
-        <input type="radio" name="Płeć" id="male" value="mezczyzna" />Mężczyzna
-
-
-        <!-- Pole typu CHECKBOX -->
-        <p>Czy wyrażasz zgodę na przetwarzanie danych?</p>
-        <label for="checkbox">Tak </label>
-        <input type="checkbox" name="Zgoda" id="checkbox" value="Tak" />
-        <br />
-        <br />
-
-        <p>Wiadomość:</p>
-        <label for="message"></label>
-        <textarea name="Wiadomość" id="message" cols="50" rows="10"></textarea>
-        <br />
-        <br />
-        <br />
-        <!-- Przycisk WYŚLIJ -->
-        <input type="submit" value="Wyślij" />
-
-    </form>
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Głowny JS -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
