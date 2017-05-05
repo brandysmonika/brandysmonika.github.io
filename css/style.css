@@ -2,6 +2,7 @@ body {
     background-color: #fff;
 }
 
+
 /* Wspólny padding dla każdego ID dokumentu */
 
 #services .container .row,
@@ -12,13 +13,15 @@ body {
     padding: 30px;
 }
 
+
 /* Wspólna wielkosć czcionek dla h3*/
 
-#services h3,
-#about h3,
-#portfolio h3 {
+#services h4,
+#about h4,
+#portfolio h4 {
     font-size: 1.3em;
 }
+
 
 /* Fonty dla wszystkich nagłówków h1 */
 
@@ -26,17 +29,18 @@ p {
     font-family: 'Roboto Slab', serif;
 }
 
-h2,
+h3,
 .navbar-brand {
     font-family: 'Droid Serif', serif;
     font-weight: 300;
     font-size: 1.3em;
 }
 
+
 /* Fonty dla wszystkich nagłówków h2, menu nawigacyjnego */
 
-h1,
-h3,
+h2,
+h4,
 #menu-glowne .navbar-nav>li>a,
 .btn,
 .place-input,
@@ -47,7 +51,9 @@ h3,
     font-size: 2em;
 }
 
+
 /* Wspólne style dla font awesome */
+
 #about .container .row .icon-awe,
 #footer .container .row .icon-awe {
     border-radius: 50%;
@@ -72,6 +78,8 @@ h3,
     padding-left: 12px;
     padding-right: 12px;
 }
+
+
 /* Style dla menu nawigacyjnego - START */
 
 .navbar {
@@ -99,7 +107,9 @@ h3,
     color: #0ed8d6;
 }
 
+
 /* Style dla menu nawigacyjnego - STOP */
+
 
 /* Nawigacja scroll - kolor menu po scrollu - START */
 
@@ -119,11 +129,14 @@ h3,
 #main-nav.scroll .navbar-brand {
     color: #fff;
 }
+
+
 /* Nawigacja scroll - kolor menu po scrollu - STOP */
+
 
 /* Style dla Header z Obrazkiem - START */
 
-#main-header {
+header {
     background-image: linear-gradient(rgba(82, 82, 122, 0.5), rgba(82, 82, 122, 0.5)), url(../img/header/pictures_on_the_wall.jpg);
     height: 100vh;
     background-position: center;
@@ -131,7 +144,7 @@ h3,
     position: relative;
 }
 
-#main-header .header-caption {
+header .header-caption {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -141,13 +154,14 @@ h3,
     color: #fff;
 }
 
-#main-header .header-caption h2 {
+header .header-caption h2 {
     font-size: 2em;
 }
 
-#main-header .header-caption h1 {
+header .header-caption h1 {
     font-size: 4em;
 }
+
 
 /* Style dla przycisku button na obrazku - START */
 
@@ -158,7 +172,10 @@ span[title~="viev"] {
 .btn-blue {
     background-color: #0ed8d6;
 }
+
+
 /* Style dla Header z Obrazkiem - STOP */
+
 
 /* Style dla section Servies - START */
 
@@ -187,9 +204,13 @@ span[title~="viev"] {
 #services .container .row .fa-stack-2x {
     color: #0ed8d6;
 }
+
+
 /* Kolor ikon + animacja STOP */
 
+
 /* Style dla section Servies - STOP */
+
 
 /* Style dla sekcji Portfolio - START */
 
@@ -269,7 +290,10 @@ span[title~="viev"] {
     margin-bottom: 5%;
     padding: 10px;
 }
+
+
 /* Style dla sekcji Portfolio - STOP */
+
 
 /* Style dla sekcji o NAS - START */
 
@@ -281,7 +305,9 @@ span[title~="viev"] {
     max-height: 230px;
 }
 
+
 /* Style dla sekcji o NAS - STOP */
+
 
 /* Style dla sekcji Kontakt - START */
 
@@ -324,11 +350,14 @@ span[title~="viev"] {
     font-size: 15px;
     padding: 20px;
 }
+
+
 /* Sekcja Kontakt - STOP */
+
 
 /* Sekcja Stopka - START */
 
-#footer h1 {
+#footer h2 {
     font-size: 1em;
     text-transform: none;
 }
@@ -336,4 +365,6 @@ span[title~="viev"] {
 #footer .container .row span {
     margin-left: 5%;
 }
+
+
 /* Sekcja Stopka - STOP */
